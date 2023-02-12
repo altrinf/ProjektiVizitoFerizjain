@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header NAVBAR */
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  margin: 0;
+  box-shadow: 2px 2px 50px 10px #2d2d2d;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 50px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .home {
+  background-color: #00ffbb;
+  color: white;
+}
+
+.topnav .navi {
+  position: center;
+  position: relative;
+  float: 200px;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+  z-index: 1;
+}
+
+header .container {
+  position: absolute;
+  width: auto;
+  right: 0%;
+}
+
+button {
+  border: 0;
+  color: #f2f2f2;
+  background-color: #333;
+  padding: 18px 45px;
+  font-size: 17px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown {
+  position: inherit;
+  margin-right: 5px;
+  position: relative;
+  float: right;
+}
+
+.dropdown a {
+  background-color: #333;
+  width: 100px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Header NAVBAR */
+
+/* VIDEO */
+
+.container video {
+  width: 100%;
+  z-index: -1;
+  box-shadow: 5px 5px 50px 20px #2d2d2d;
+}
+
+/* VIDEO */
+
+/* OVERLAY DIV (CENTER) */
+
+.overlay {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+/* OVERLAY DIV (CENTER) */
+
+/* FOTOT */
+
+.foto {
+  border-radius: 15px;
+  width: 330px;
+  height: 430px;
+  margin: 15px;
+  -webkit-filter: brightness(70%);
+  box-shadow: 1px 1px 20px #2d2d2d;
+}
+
+.grow img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-filter: brightness(100%);
+  transition: 0.5s ease;
+}
+
+/* FOTOT */
+
+/* OVERLAY HR (Ndarja fotove dhe tekstit) */
+.overlay hr {
+  margin: 30px;
+}
+/* OVERLAY HR (Ndarja fotove dhe tekstit) */
+
+/* TEKSTI */
+
+.teksti {
+  text-align: justify;
+  margin: 0 auto;
+  width: 1100px;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 50px 10px #2d2d2d;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 30px;
+  margin-top: 10%;
+}
+.teksti pre {
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* TEKSTI */
+
+/* GOOGLE MAP FERIZAJ */
+
+.text-map {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.gmap {
+  margin: auto;
+  width: fit-content;
+  box-shadow: 1px 1px 20px 3px #2d2d2d;
+  margin-bottom: 40px;
+  border: #333 1px solid;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 700px;
+}
+
+/* GOOGLE MAP FERIZAJ */
+
+/* FOOTERI  */
+
+.footer {
+  background-color: #333;
+  width: 100%;
+  height: 250px;
+  box-shadow: 1px 1px 20px 3px #2d2d2d;
+}
+
+.footer .container {
+  display: inline-flex;
+  text-align: center;
+  width: 1200px;
+}
+
+.footer .center {
+  margin-top: 15px;
+  text-align: center;
+  color: #f2f2f2;
+  margin-left: 20%;
+}
+
+.footer img {
+  width: 130px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .left {
+  position: relative;
+  color: #f2f2f2;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 80px;
+  margin-right: 50px;
+}
+
+.footer .right {
+  text-align: left;
+  color: #f2f2f2;
+  margin-top: 80px;
+  font-size: 12px;
+  width: 300px;
+}
+.display-mobile {
+  display: none;
+}
+.display-desktop {
+  display: block;
+}
+/* FOOTERI  */
+
+/* media querry */
+@media only screen and (max-width: 768px) {
+  .overlay {
+    top: 45%;
+  }
+  .display-mobile {
+    display: block;
+  }
+  .display-desktop {
+    display: none;
+  }
+  .text {
+    margin-top: 1rem;
+  }
+  .teksti {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .gmap .mapouter {
+    width: 400px;
+    overflow: hidden;
+  }
+  .gmap_canvas {
+    width: 400px !important;
+  }
+  /* footeri */
+  .footer .container {
+    width: fit-content;
+  }
+  .footer {
+    height: 30rem;
+    margin-left: 0.25rem;
+  }
+  .container-footer p {
+    color: white;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .text-left-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .text-right-container {
+    margin-top: 2rem;
+  }
+}
